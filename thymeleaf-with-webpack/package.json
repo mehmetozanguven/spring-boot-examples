@@ -1,0 +1,36 @@
+{
+  "name": "thymeleaf-with-webpack",
+  "version": "1.0.0",
+  "description": "Basic structure for thymeleaf with gulp and webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "watch": "NODE_ENV=development gulp watch",
+    "build-prod": "NODE_ENV='production' gulp build"
+  },
+  "author": "mehmetozanguven",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.0",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-environments": "^1.0.1",
+    "gulp-html-minifier-terser": "^7.0.0-beta.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^8.0.0",
+    "tailwindcss": "^3.2.4",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.5"
+  }
+}
