@@ -1,10 +1,12 @@
 package com.mehmetozanguven.paginateleftjoinqueries.entity;
 
+import jakarta.persistence.*;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
-import javax.persistence.*;
 
 @Entity
 @Table(name = "student")

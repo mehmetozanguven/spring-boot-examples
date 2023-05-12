@@ -4,15 +4,12 @@ import com.mehmetozanguven.paginateleftjoinqueries.entity.School;
 import com.mehmetozanguven.paginateleftjoinqueries.entity.Student;
 import com.mehmetozanguven.paginateleftjoinqueries.repository.SchoolRepository;
 import com.mehmetozanguven.paginateleftjoinqueries.repository.StudentRepository;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.util.StringUtils;
-
-import javax.annotation.PostConstruct;
-import java.util.concurrent.ThreadLocalRandom;
 
 @SpringBootApplication
 @RequiredArgsConstructor
