@@ -2,12 +2,11 @@ package com.mehmetozanguven.springcachewithoutannotation.service;
 
 import com.mehmetozanguven.springcachewithoutannotation.model.User;
 import com.mehmetozanguven.springcachewithoutannotation.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
