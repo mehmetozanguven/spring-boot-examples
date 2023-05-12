@@ -1,6 +1,7 @@
 package com.mehmetozanguven.springbootjwtexample.dto;
 
-import javax.persistence.*;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "user_roles")

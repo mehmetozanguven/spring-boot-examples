@@ -5,11 +5,11 @@ import com.mehmetozanguven.springbootjwtexample.dto.UserRoleDTO;
 import com.mehmetozanguven.springbootjwtexample.repository.RegisterRepository;
 import com.mehmetozanguven.springbootjwtexample.request.RegisterRequest;
 import com.mehmetozanguven.springbootjwtexample.response.RegisterResponse;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
