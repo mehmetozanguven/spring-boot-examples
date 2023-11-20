@@ -72,5 +72,6 @@
   </build>
   <modules>
     <module>generic-base-entity</module>
+    <module>thymeleaf-with-webpack</module>
   </modules>
 </project>
