@@ -16,8 +16,11 @@
   <name>spring-boot-examples-parent</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <parent.java.version>17</parent.java.version>
+    <java.version>17</java.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <apache.commons.io>2.8.0</apache.commons.io>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -38,6 +41,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>${apache.commons.io}</version>
     </dependency>
   </dependencies>
   <build>
@@ -72,6 +81,7 @@
   </build>
   <modules>
     <module>generic-base-entity</module>
+    <module>spring-ip2Location</module>
     <module>thymeleaf-with-webpack</module>
   </modules>
 </project>
