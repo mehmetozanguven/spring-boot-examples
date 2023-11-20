@@ -21,12 +21,8 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <apache.commons.io>2.8.0</apache.commons.io>
+    <commons.lang3.version>3.12.0</commons.lang3.version>
   </properties>
-  <dependencyManagement>
-    <dependencies>
-    
-    </dependencies>
-  </dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -42,40 +38,22 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>${apache.commons.io}</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons.lang3.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.0</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.3.0</version>
-        <configuration>
-          <archive>
-            <index>true</index>
-            <manifest>
-              <addClasspath>true</addClasspath>
-            </manifest>
-          </archive>
-        </configuration>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
@@ -83,5 +61,10 @@
     <module>generic-base-entity</module>
     <module>spring-ip2Location</module>
     <module>thymeleaf-with-webpack</module>
+    <module>paginate-left-join-queries</module>
+    <module>recaptcha-integration/recaptcha-example-api</module>
+    <module>spring-boot-jwt-example</module>
+    <module>spring-aop</module>
+    <module>spring-cache-without-annotation</module>
   </modules>
 </project>
