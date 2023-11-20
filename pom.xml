@@ -77,5 +77,6 @@
     <module>spring-boot-jwt-example</module>
     <module>spring-aop</module>
     <module>spring-cache-without-annotation</module>
+    <module>graceful-shutdown</module>
   </modules>
 </project>
