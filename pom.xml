@@ -78,5 +78,6 @@
     <module>spring-aop</module>
     <module>spring-cache-without-annotation</module>
     <module>graceful-shutdown</module>
+    <module>capture-long-running-method</module>
   </modules>
 </project>
