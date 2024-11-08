@@ -40,7 +40,8 @@ public class Ip2LocationServiceImpl implements MyIpLocation, Ip2Location {
             logger.info("Ip2Location loaded");
         } catch (IOException e) {
             logger.error("Can not open the ip2Location", e);
-            throw new RuntimeException("Can not open the ip2Location");
+            // You may throw exception or something else, when the path not exists
+//            throw new RuntimeException("Can not open the ip2Location");
         }
     }
 
