@@ -16,10 +16,10 @@
   <name>spring-boot-examples-parent</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <parent.java.version>17</parent.java.version>
-    <java.version>17</java.version>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <parent.java.version>21</parent.java.version>
+    <java.version>21</java.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <apache.commons.io>2.15.0</apache.commons.io>
     <commons.lang3.version>3.13.0</commons.lang3.version>
   </properties>
@@ -79,5 +79,6 @@
     <module>spring-cache-without-annotation</module>
     <module>graceful-shutdown</module>
     <module>capture-long-running-method</module>
+    <module>criteria-api-with-spring-boot</module>
   </modules>
 </project>
