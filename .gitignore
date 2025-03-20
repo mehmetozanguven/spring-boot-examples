@@ -1,3 +1,4 @@
 .idea/**
 target/**
 dependency-reduced-pom.xml
+more-dynamic-filters-with-criteria-api/
