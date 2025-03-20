@@ -81,5 +81,6 @@
     <module>capture-long-running-method</module>
     <module>criteria-api-with-spring-boot</module>
     <module>more-dynamic-filters-with-criteria-api</module>
+    <module>outbox-pattern-with-spring-boot</module>
   </modules>
 </project>

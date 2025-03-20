@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: outbox-pattern-with-spring-boot
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  flyway:
+    enabled: true
